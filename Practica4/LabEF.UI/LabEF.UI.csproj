@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicios.cs" />
     <Compile Include="Menues.cs" />
     <Compile Include="MetodosCategoria.cs" />
     <Compile Include="MetodosShipper.cs" />
