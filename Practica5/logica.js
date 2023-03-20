@@ -22,15 +22,7 @@ botonProbar.addEventListener("click", function(){
     
     resultadoPerder.style.display = "none";
     let ingresarNumero = document.getElementById("ingresoNumero").value;
-    
-    if(ingresarNumero > numeroAleatorio)
-    {
-        ayuda.value = "¡Más bajo!"
-    }
-    else
-    {
-        ayuda.value = "¡Más alto!"
-    }
+    ingresarNumero > numeroAleatorio ? ayuda.value = "¡Más bajo!" : ayuda.value = "¡Más alto!"
     
     if(ingresarNumero == numeroAleatorio) 
     {
