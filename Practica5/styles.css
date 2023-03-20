@@ -1,0 +1,83 @@
+
+.botonReiniciar
+{
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    border-color: rgb(207, 7, 7);
+    background-color: rgb(207, 7, 7);
+}
+
+.botonMusica
+{
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    border-color: rgb(50, 4, 166);
+    background-color: rgb(50, 4, 166);
+}
+
+.botonProbar
+{
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    border-color: rgb(14, 104, 14);
+    background-color: rgb(14, 104, 14);
+    margin-left: 25%;
+}
+
+.titulo
+{
+    text-align: center;
+}
+
+.ingresarNumero
+{
+    padding: 10px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.aleatorio
+{
+    text-align: center;
+    background: rgba(229, 9, 9, 0.775);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.divAleatorio
+{
+    text-align: center;
+}
+
+#divScore
+{
+    margin-left: 50%;
+    margin-top: -75px;
+}
+
+#divNumero
+{
+    margin-top: 8%;
+    margin-left: 4px;
+}
+
+#divProbar
+{
+    padding: 10px;
+    margin-left: 70px;
+}
+
+#ayuda, #puntaje, #maximoPuntaje, #numeroAleatorio
+{
+    border: 0;
+}
+
+#resultadoPerder, #resultadoGanar
+{
+    text-align: center;
+    margin-top: 40px;
+}
