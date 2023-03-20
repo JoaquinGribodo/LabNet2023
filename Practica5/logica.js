@@ -50,7 +50,7 @@ botonProbar.addEventListener("click", function(){
 botonReiniciar.addEventListener("click", function(){
     ayuda.value = "";
     Aleatorio.value = "?";
-    numeroAleatorio = Math.floor(Math.random() * 10);
+    numeroAleatorio = Math.floor(Math.random() * 20);
     resultadoPerder.style.display = "none";
     resultadoGanar.style.display = "none";  
     puntaje.value = 20;
