@@ -14,7 +14,6 @@ let numeroAleatorio = Math.floor(Math.random() * 20);
 resultadoPerder.style.display = "none";
 resultadoGanar.style.display = "none";
 puntaje.value = 20;
-document.body.style.backgroundColor = "#FFFFFF";
 maximoPuntaje.value = localStorage.getItem("maximoPuntaje");
 Aleatorio.value = '?';
 
@@ -28,7 +27,7 @@ botonProbar.addEventListener("click", function(){
     {
         maximoPuntaje.value = puntaje.value;
         ayuda.value = "¡Número correcto!";
-        document.body.style.backgroundColor = "#04B431";
+
         resultadoGanar.style.display = "block";
         localStorage.setItem("maximoPuntaje", maximoPuntaje.value);
         Aleatorio.value = numeroAleatorio;
@@ -50,7 +49,7 @@ botonProbar.addEventListener("click", function(){
 
 botonReiniciar.addEventListener("click", function(){
     ayuda.value = "";
-    document.body.style.backgroundColor = "#FFFFFF";
+    Aleatorio.value = "?";
     numeroAleatorio = Math.floor(Math.random() * 10);
     resultadoPerder.style.display = "none";
     resultadoGanar.style.display = "none";  
