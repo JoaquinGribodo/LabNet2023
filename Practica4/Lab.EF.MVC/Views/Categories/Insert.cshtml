@@ -1,0 +1,21 @@
+﻿@model Lab.EF.MVC.Models.CategoriesView
+
+@{
+    ViewBag.Title = "Categories Page";
+}
+
+<h1>Insertar una nueva Categoría</h1>
+
+@using (Html.BeginForm("Insert", "Categories", FormMethod.Post))
+{
+    <br />
+    @Html.LabelFor(n => n.Nombre)
+    @Html.TextBoxFor(n => n.Nombre)
+    @Html.ValidationMessageFor(n => n.Nombre, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(n => n.Descripcion)
+    @Html.TextBoxFor(n => n.Descripcion)
+    @Html.ValidationMessageFor(n => n.Descripcion, "", new { @class = "text-danger" })
+    <br />
+    <input type="submit" class="btn btn-primary" value="Guardar" />
+}

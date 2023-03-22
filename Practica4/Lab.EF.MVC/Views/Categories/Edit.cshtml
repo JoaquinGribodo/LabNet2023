@@ -1,0 +1,22 @@
+﻿@model Lab.EF.MVC.Models.CategoriesView
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar una Categoría</h2>
+
+@using (Html.BeginForm("Edit", "Categories", FormMethod.Post))
+{
+    @Html.HiddenFor(i => i.Id)
+    <br />
+    @Html.LabelFor(n => n.Nombre)
+    @Html.EditorFor(n => n.Nombre)
+    @Html.ValidationMessageFor(n => n.Nombre, "", new { @class = "text-danger" })
+    <br />
+    @Html.LabelFor(n => n.Descripcion)
+    @Html.EditorFor(n => n.Descripcion)
+    @Html.ValidationMessageFor(n => n.Descripcion, "", new { @class = "text-danger" })
+    <br />
+    <input type="submit" class="btn btn-success" value="Editar" />
+}
