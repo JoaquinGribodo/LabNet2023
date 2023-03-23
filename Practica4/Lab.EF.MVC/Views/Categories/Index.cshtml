@@ -25,7 +25,7 @@
                 <td>@category.Nombre</td>
                 <td>@category.Descripcion</td>
                 <td>@Html.ActionLink("Borrar", "Delete", new { id = @category.Id}, new { onclick = "return confirm('¿Desea eliminar la categoría?')" })</td>
-                <td>@Html.ActionLink("Editar", "Edit", new { id = @category.Id }, null)</td>
+                <td>@Html.ActionLink("Editar", "Edit", new { id = @category.Id })</td>
             </tr>
         }
     </tbody>
