@@ -60,10 +60,6 @@ namespace LabEF.Logic
                     categoryUpdate.Description = category.Description;
                     context.SaveChanges();
                 }
-                else
-                {
-                    Console.WriteLine("La ID que ingresó no existe.");
-                }
             }
             catch (Exception ex)
             {

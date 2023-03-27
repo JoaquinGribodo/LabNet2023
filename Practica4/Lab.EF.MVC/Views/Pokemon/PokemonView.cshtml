@@ -1,0 +1,27 @@
+﻿@model  List<Lab.EF.MVC.Models.PokemonClass>
+
+
+@{
+    ViewBag.Title = "Pokemons Page";
+}
+ 
+
+<h1>Pokemones</h1>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pokemon in Model)
+        {
+            <tr>
+                <td>@pokemon.name</td>
+                <td>@pokemon.url</td>
+            </tr>
+        }
+    </tbody>
+</table>
