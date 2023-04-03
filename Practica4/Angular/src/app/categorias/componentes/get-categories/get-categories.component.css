@@ -1,0 +1,9 @@
+body{
+    background: url('https://www.10wallpaper.com/wallpaper/1920x1440/1210/beautiful_mountain_scenery_hdr-Travel_Nature_Wallpapers_1920x1440.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
